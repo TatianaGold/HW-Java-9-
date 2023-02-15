@@ -30,7 +30,7 @@ public class Radio {
         if (currentRadio == 9) {
             currentRadio = 0;
         } else {
-                currentRadio++;
+            currentRadio++;
         }
     }
 

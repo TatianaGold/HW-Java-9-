@@ -9,12 +9,12 @@ public class Radio {
     private int maxVolumeLevel = 100;
     private int minVolumeLevel = 0;
     
-    public Radio(int countRadio) {
-        this.maxRadioLevel = countRadio - 1;
-    }
-
     public Radio() {
         this.countRadio = countRadio;
+    }
+    
+    public Radio(int countRadio) {
+        this.maxRadioLevel = countRadio - 1;
     }
 
     public int getCurrentRadio() {

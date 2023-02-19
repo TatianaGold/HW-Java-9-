@@ -8,6 +8,14 @@ public class Radio {
     private int currentVolume;
     private int maxVolumeLevel = 100;
     private int minVolumeLevel = 0;
+    
+    public Radio(int countRadio) {
+        this.maxRadioLevel = countRadio - 1;
+    }
+
+    public Radio() {
+        this.countRadio = countRadio;
+    }
 
     public int getCurrentRadio() {
         return currentRadio;
@@ -23,14 +31,6 @@ public class Radio {
 
     public int getCurrentVolume() {
         return currentVolume;
-    }
-
-    public Radio(int countRadio) {
-        this.maxRadioLevel = countRadio - 1;
-    }
-
-    public Radio() {
-        this.countRadio = countRadio;
     }
 
     public void setCurrentRadio(int newCurrentRadio) {
